@@ -32,3 +32,21 @@
 - On-demand, natural-language insights into current crypto markets
 - Fast search and retrieval over real-time market metrics
 - Private, local LLM-powered assistant for crypto research and monitoring
+
+
+## Project Challenges
+
+### 1: Prompt Sensitivity (Context Understanding)
+- Phi-3 is small and fast, but it's more sensitive to prompt phrasing compared to larger models (like GPT-4 or LLaMA-2-13B).
+- ***Solution:*** You had to carefully engineer the prompt:
+
+### 2: No Native Retrieval (RAG Needed)
+- Phi-3 doesn’t have access to real-time data or external tools. Had to build a full Retrieval-Augmented Generation (RAG) pipeline from scratch.
+- FAISS vector store
+- Sentence embedding pipeline (MiniLM)
+
+### 3: Quantized Model Trade-offs
+- I quantized Phi-3 for performance , but this reduced generation quality slightly, especially for longer or complex answers.
+- do_sample=False (for deterministic output)
+- max_new_tokens=60 (to prevent rambling)
+- Carefully filtered FAISS context
