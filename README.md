@@ -36,7 +36,7 @@
 
 ## Project Challenges
 
-### 1:Challenges Faced Using Phi-3 for Crypto QA
+### Challenges Faced Using Phi-3 for Crypto QA
 - ***Prompt Engineering:*** Phi-3 requires clear, consistent prompts. I experimented with multiple prompt formats to improve factual accuracy.
 - ***Financial Data Accuracy***: Phi-3 can misinterpret numeric data. I solved this by structuring documents clearly (Market Cap: $...).
 - ***No Native Knowledge Retrieval:*** I built a full FAISS-based RAG pipeline using sentence-transformers to feed Phi-3 accurate, live crypto data.
