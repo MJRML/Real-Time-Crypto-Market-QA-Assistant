@@ -16,7 +16,7 @@
 
 
 ## Tech Stack
-- LLMs: Phi-3 (Quantized)
+- LLMs: Phi-3 (Quantized) -> **(this can be changed to Mistral-7B or LLaMA2 depedning on the requirments and computational and data resources available)**
 - Embedding & Retrieval: FAISS
 - Data Sources: Real-time APIs (CoinGecko)
 
