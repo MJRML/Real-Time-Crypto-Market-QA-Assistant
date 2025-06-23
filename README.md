@@ -1,1 +1,1 @@
-# Real-Time-Crypto-Market-Q-A-Assistant
+# Real-Time-Crypto-Market-QA-Assistant
